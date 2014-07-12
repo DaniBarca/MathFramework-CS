@@ -77,7 +77,7 @@
         for (c = _j = 0; _j <= cols; c = _j += 1) {
           temp = 0;
           for (t = _k = 0; _k <= cols; t = _k += 1) {
-            temp = get(r, t) * get(t, c);
+            temp += get(r, t) * get(t, c);
           }
           res.set(r, c, temp);
         }

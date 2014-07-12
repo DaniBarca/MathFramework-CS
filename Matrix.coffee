@@ -55,7 +55,7 @@ class SQMatrix
       for c in [0..cols] by 1
         temp = 0
         for t in [0..cols] by 1
-          temp = get(r,t) * get(t,c)
+          temp += get(r,t) * get(t,c)
         res.set(r,c,temp)
     res
 
